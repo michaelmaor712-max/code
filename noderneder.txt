@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Chapo Burger</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f7f4ef;
+color:#222;
+line-height:1.7;
+}
+
+header{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+color:white;
+max-width:700px;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:15px;
+letter-spacing:2px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#c89b3c;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#a77d28;
+}
+
+section{
+padding:70px 10%;
+}
+
+.section-title{
+font-size:42px;
+margin-bottom:40px;
+text-align:center;
+color:#111;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text{
+font-size:18px;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.menu-card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-5px);
+}
+
+.menu-card h3{
+margin-bottom:10px;
+font-size:24px;
+color:#c89b3c;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+margin:12px 0;
+}
+
+.hours{
+background:#111;
+color:white;
+border-radius:25px;
+padding:50px;
+max-width:700px;
+margin:auto;
+}
+
+.hours p{
+margin:12px 0;
+font-size:20px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+padding-bottom:10px;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact p{
+font-size:22px;
+margin:10px 0;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:50px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>CHAPO BURGER</h1>
+
+<p>
+המבורגרים מושחתים, אווירה קלאסית וטעמים שלא שוכחים
+</p>
+
+<a href="#menu" class="btn">
+לתפריט
+</a>
+
+</div>
+
+</header>
+
+<section>
+
+<h2 class="section-title">
+על המקום
+</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1200&auto=format&fit=crop">
+
+<div class="about-text">
+
+<p>
+Chapo Burger הוא מקום שמביא חווית המבורגר איכותית עם חומרי גלם טריים,
+קציצות עסיסיות וטעמים מיוחדים שלא רואים בכל מקום.
+</p>
+
+<br>
+
+<p>
+המקום ממוקם בעוזיאל 55 רמת גן ומציע ישיבה במקום, משלוחים ואיסוף עצמי.
+</p>
+
+<br>
+
+<p>
+⭐ דירוג 4.3 מתוך 628 ביקורות
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="section-title">
+התפריט
+</h2>
+
+<div class="menu-grid">
+
+<div class="menu-card">
+<h3>צ׳אפו ביג</h3>
+<p>2 קציצות עסיסיות 440 גרם, גבינת צ׳דר, איולי טבסקו, אורגולה, בצל, עגבניה וחלפיניו מוגש עם צ׳יפס</p>
+<div class="price">99₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל צ׳אפו גורגונזולה</h3>
+<p>קציצה 220 גרם, גבינת גורגונזולה, ריבת בצל, איולי שום שחור ואורגולה מוגש עם צ׳יפס</p>
+<div class="price">86₪</div>
+</div>
+
+<div class="menu-card">
+<h3>עסקית צ׳אפו קלאסי</h3>
+<p>המבורגר צ׳אפו קלאסי בתוספת צ׳יפס ושתיה לבחירה</p>
+<div class="price">87₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו קממבר</h3>
+<p>קציצה 220 גרם, איולי כמהין, שום קונפי, ריבת בצל ואורגולה מוגש עם צ׳יפס</p>
+<div class="price">86₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל צ׳אפו מפורק</h3>
+<p>קציצה 220 גרם עם אסאדו מפורק, אורגולה, עגבניה ואיולי צ׳יפוטלה מוגש עם צ׳יפס</p>
+<div class="price">97₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו קלאסי</h3>
+<p>קציצה 220 גרם, חסה, מלפפון כבוש, בצל ועגבניה</p>
+<div class="price">60₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו מיט & צ׳יז</h3>
+<p>קציצה 220 גרם, צ׳דר, קורנביף, איולי צ׳יפוטלה ושום שחור מוגש עם צ׳יפס</p>
+<div class="price">86₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל תבשיל אסאדו</h3>
+<p>אסאדו מפורק ביין אדום עם פטריות וריבת בצל מוגש עם צ׳יפס</p>
+<div class="price">89₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל צ׳אפו כבד אווז</h3>
+<p>קציצה 220 גרם, איולי כמהין, בצל מקורמל וכבד אווז מוגש עם צ׳יפס</p>
+<div class="price">120₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו פטריות וביצת עין</h3>
+<p>קציצה 220 גרם עם פטריות מוקפצות, ביצת עין, ריבת בצל ואיולי שום שחור</p>
+<div class="price">86₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו צ׳יז</h3>
+<p>קציצה 220 גרם, גבינת גאודה, איולי שום שחור ואיולי פפריקה מוגש עם צ׳יפס</p>
+<div class="price">85₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קריספי צ׳יקן</h3>
+<p>חזה עוף בציפוי פריך עם חסה, עגבניה, מלפפון כבוש ואיולי כמהין</p>
+<div class="price">68₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל בושה</h3>
+<p>קציצה 220 גרם, גבינת בושה, ריבת נקטרינה ואיולי כמהין</p>
+<div class="price">101₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו בנדיקט</h3>
+<p>קציצה 220 גרם עם ביצה עלומה, הולנדייז, קורנביף ואיולי כמהין</p>
+<div class="price">72₪</div>
+</div>
+
+<div class="menu-card">
+<h3>בורגר טבעוני</h3>
+<p>קציצת ביונד מיט עם חסה, עגבניה, בצל ומלפפון חמוץ מוגש עם צ׳יפס</p>
+<div class="price">80₪</div>
+</div>
+
+<div class="menu-card">
+<h3>סלט קיסר</h3>
+<p>לבבות חסה, קרוטונים, פרמז׳ן, צלפים ורוטב קיסר</p>
+<div class="price">26₪</div>
+</div>
+
+<div class="menu-card">
+<h3>נקנקיות</h3>
+<p>נקניקיית צ׳וריסוס ונקניקיית טלה בדואית מוגש עם צ׳יפס</p>
+<div class="price">59₪</div>
+</div>
+
+<div class="menu-card">
+<h3>אצבעות קריספי צ׳יקן</h3>
+<p>5 אצבעות קריספי צ׳יקן עם איולי צ׳יפוטלה וצ׳ילי מתוק</p>
+<div class="price">62₪</div>
+</div>
+
+<div class="menu-card">
+<h3>סלט צ׳אפו</h3>
+<p>שומר, קולורבי, סלרי, צנונית, שרי ומלפפון ברוטב לימון</p>
+<div class="price">25₪</div>
+</div>
+
+<div class="menu-card">
+<h3>צ׳אפו מקסיקני 🌶️🌶️🌶️</h3>
+<p>קציצה 220 גרם, גוואקאמולי, צ׳דר, חלפיניו ואיולי צ׳יפוטלה</p>
+<div class="price">87₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל אסאדו מפורק</h3>
+<p>קציצה 220 גרם עם אסאדו מפורק, צ׳ימיצ׳ורי וצ׳יפוטלה</p>
+<div class="price">99₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספיישל 4 גבינות</h3>
+<p>צ׳דר, גאודה, קממבר וגורגונזולה עם איולי כמהין</p>
+<div class="price">98₪</div>
+</div>
+
+<div class="menu-card">
+<h3>Mr.Chapo 🌶️🌶️🌶️</h3>
+<p>קציצה 220 גרם, צ׳דר, חלפיניו ורוטב הבנרו</p>
+<div class="price">69₪</div>
+</div>
+
+<div class="menu-card">
+<h3>נקנקיית עגל ענקית :)</h3>
+<p>נקנקיית עגל בלחמנית בריוש עם כרוב כבוש ורטבים</p>
+<div class="price">67₪</div>
+</div>
+
+<div class="menu-card">
+<h3>כריך קורנביף</h3>
+<p>קורנביף מעושן בג׳בטה דגנים עם אורגולה ועגבניה</p>
+<div class="price">72₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קריספי צ׳יקן חריף אש 🌶️🌶️🌶️</h3>
+<p>קריספי צ׳יקן עם רוטב הבנרו חריף ואיולי בזיליקום לימוני</p>
+<div class="price">80₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קריספי צ׳יקן עם צ׳דר הולנדי</h3>
+<p>קריספי צ׳יקן עם גבינת צ׳דר ואיולי בזיליקום לימוני</p>
+<div class="price">81₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ארוחה זוגית</h3>
+<p>2 המבורגרים, 2 תוספות ו-2 שתיות</p>
+<div class="price">180₪</div>
+</div>
+
+<div class="menu-card">
+<h3>בירה ווינשטפן</h3>
+<p>0.33 ליטר</p>
+<div class="price">27₪</div>
+</div>
+
+<div class="menu-card">
+<h3>בירה אסטראה</h3>
+<p>0.33 ליטר</p>
+<div class="price">27₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קיט רטבים</h3>
+<p>2 קטשופ, 2 מיונז, מפית, מגבון וקיסם</p>
+<div class="price">7₪</div>
+</div>
+
+<div class="menu-card">
+<h3>שעועית ירוקה</h3>
+<p>שעועית ירוקה מוקפצת ברוטב ויניגרט ושום לימון</p>
+<div class="price">26₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספרייט זירו</h3>
+<p>0.33 ליטר</p>
+<div class="price">13₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קולה זירו</h3>
+<p>0.33 ליטר</p>
+<div class="price">13₪</div>
+</div>
+
+<div class="menu-card">
+<h3>ספרייט</h3>
+<p>0.33 ליטר</p>
+<div class="price">13₪</div>
+</div>
+
+<div class="menu-card">
+<h3>פאנטה</h3>
+<p>0.33 ליטר</p>
+<div class="price">13₪</div>
+</div>
+
+<div class="menu-card">
+<h3>קוקה קולה</h3>
+<p>0.33 ליטר</p>
+<div class="price">13₪</div>
+</div>
+
+<div class="menu-card">
+<h3>עוגת גבינה ביסקית</h3>
+<p>מנה אישית</p>
+<div class="price">40₪</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+שעות פעילות
+</h2>
+
+<div class="hours">
+
+<p>ראשון — 12:00 עד 3:00</p>
+<p>שני — 12:00 עד 3:00</p>
+<p>שלישי — 12:00 עד 3:00</p>
+<p>רביעי — 12:00 עד 3:00</p>
+<p>חמישי — 12:00 עד 5:00</p>
+<p>שישי — סגור</p>
+<p>שבת — סגור</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">
+יצירת קשר
+</h2>
+
+<p>
+📍 עוזיאל 55, רמת גן
+</p>
+
+<p>
+📞 050-343-5383
+</p>
+
+<p>
+🚗 משלוחים ואיסוף עצמי זמינים
+</p>
+
+</section>
+
+<footer>
+
+CHAPO BURGER © 2026
+
+</footer>
+
+</body>
+</html>
